@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap');
+*{
+    
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: bold;
+}
+:root{
+    --primary-color:#187bcd;
+    --dark-color:#03254c;
+    --light-color:#d0efff;
+}
+
+/* custom scroll bar  */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track
+{
+    background:#d0efff;
+}
+::-webkit-scrollbar-thumb{
+    background: var --primary-color;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var var(--primary-color);
+}
+
+/* navbar styling */
+nav{
+    position: fixed;
+    width: 100%;
+    padding:20px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+nav.sticky{
+    background: var --primary-color;
+    padding: 13px 0;
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+nav .navbar .logo a{
+    font-weight: 1000;
+    font-size:35px;
+    color: var(--primary-color);
+}
+nav.sticky .navbar .logo a{
+    color:var(--light-color)
+}
+nav .navbar .menu{
+    display:flex;
+    position:relative;
+}
+nav .navbar .menu li{
+    margin:0 8px;
+}
+nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-color);
+    padding:6px 0;
+    transition:all 0.4s ease;
+}
+.navbar .menu a:hover{
+    color: var(--primary-color);
+}
+nav.sticky .menu a{
+    color:var(--light-color);
+}
+nav.sticky .menu a:hover{
+color:var(--dark-color);
+}
+.navbar .meia-icons a{
+    color: var(--primary-color);
+    font-size: 18px;
+    margin:0 6px;
+}
+nav.sticky .media-icons {
+    color:var(--light-color);
+}
+nav .menu-btn, .navbar .menu .cancel-btn{
+    position:absolute;
+    color: var(--light-color);
+    right:30px;
+    top:20px;
+    font-size:20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    display:none;
+}
+nav .menu-btn{
+    color:var(--primary-color)
+}
+nav.sticky .menu-btn{
+    color: var(--light-color);
+}
+.navbar .menu .menu-btn{
+    color: var(--light-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
