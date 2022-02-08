@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap');
 *{
     
     
@@ -9,8 +9,7 @@
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Source Serif 4', sans-serif;
-    font-weight: bold;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 :root{
     --primary-color:#187bcd;
@@ -71,7 +70,6 @@ nav .navbar .menu li{
 }
 nav .navbar .menu a{
     font-size: 18px;
-    font-weight: 500;
     color: var(--dark-color);
     padding:6px 0;
     transition:all 0.4s ease;
@@ -112,12 +110,127 @@ nav.sticky .menu-btn{
 .navbar .menu .menu-btn{
     color: var(--light-color);
 }
+/* home section */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("images/blue.jpg") no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ .home .home-content{
+     width: 90%;
+     height:100%;
+     margin:auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+.home .text-one{
+    font-size: 25px;
+    color: var(--dark-color);
+}
+.home .text-two{
+    font-size: 60px;
+    color: var(--dark-color);
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .text-three{
+    font-size: 40px;
+    margin:-11px 0;
+    color: var(--primary-color);
+}
+.home .text-four{
+    font-size: 23px;
+    margin:-2px 0;
+    color: var(--dark-color);
+}
+.home .button{
+    margin: 14px 0;
+}
+.home .button button{
+    outline:none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: var(--primary-color);
+    color:var(--light-color);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.home .button button:hover{
+    border-color: var(--primary-color);
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+/* about section */
+section{
+    padding-top:40px;
+}
+section .content{
+    width:80%;
+    margin:40px auto;
+    
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    color:var(--dark-color);
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
 
+}
+section .title span::before,
+section .title span::after{
+    content:'';
+    position:absolute;
+    height: 2px;
+    width:100%;
+    background:var(--primary-color);
+    left:0;
+    bottom:0;
+}
+section .title span::after{
+    bottom:-7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .left{
+    width:45%;
 
+}
 
-
-
-
+.about.left img{
+    height: 400px;
+    width:400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .about-details .right{
+    width: 55%;
+}
+section .topic{
+    color:var(--dark-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom:10px;
+    
+}
 
 
 
